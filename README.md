@@ -54,3 +54,4 @@ Each transformation in `transformations.py` constructs an optimized prompt and d
 
 - The Hugging Face free tier has rate limits and a cold-start delay (~10–30s) the first time a model is invoked. The client automatically retries on HTTP 503 with backoff.
 - For fully-local GPU inference, swap `HFClient` for a `diffusers`-based pipeline — the `Transformation` interface stays the same.
+
